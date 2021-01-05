@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_sis_zendeskchat</name>
+	<creationDate>January 2021</creationDate>
+	<copyright>(C) 2021 Sergio Iglesias. All rights reserved.</copyright>
+	<author>Sergio Iglesias</author>
+	<authorEmail>info@sergioiglesias.net</authorEmail>
+	<authorUrl>https://sergioiglesias.net</authorUrl>
+	<copyright>Copyright © 2021 - All rights reserved.</copyright>
+	<license>GNU General Public License v2.0</license>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_SIS_ZENDESKCHAT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="sis_zendeskchat">sis_zendeskchat.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_sis_zendeskchat.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_sis_zendeskchat.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_sis_zendeskchat.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_sis_zendeskchat.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="key_zendesk"
+					type="text"
+					label="PLG_SYSTEM_SIS_ZENDESKCHAT_KEY_LABEL"
+					description="PLG_SYSTEM_SIS_ZENDESKCHAT_KEY_DESC"
+				/>
+				<field
+					name="menuitemno"
+					type="menuitem"
+					label="PLG_SYSTEM_SIS_ZENDESKCHAT_ITEMS_LABEL"
+					description="PLG_SYSTEM_SIS_ZENDESKCHAT_ITEMS_DESC"
+					multiple="true"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="SIS ZendeskChat">https://sergiois.github.io/sis_zendeskchat.xml</server>
+	</updateservers>
+</extension>
